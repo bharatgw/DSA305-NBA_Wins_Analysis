@@ -2,6 +2,7 @@
 2022-23,FIRST TEAM,Giannis Antetokounmpo, Milwaukee Bucks,F
 2022-23,FIRST TEAM,Jayson Tatum, Boston Celtics,F
 2022-23,FIRST TEAM,Joel Embiid, Philadelphia 76ers,C
+2022-23,FIRST TEAM,Shai Gilgeous-Alexander, Oklahoma City Thunder,G
 2022-23,FIRST TEAM,Luka Doncic, Dallas Mavericks,G
 2022-23,SECOND TEAM,Jimmy Butler, Miami Heat,F
 2022-23,SECOND TEAM,Jaylen Brown, Boston Celtics,F
@@ -11,6 +12,7 @@
 2022-23,THIRD TEAM,Julius Randle, New York Knicks,F
 2022-23,THIRD TEAM,LeBron James, Los Angeles Lakers,F
 2022-23,THIRD TEAM,Domantas Sabonis, Sacramento Kings,C
+2022-23,THIRD TEAM,De’Aaron Fox, Sacramento Kings,G
 2022-23,THIRD TEAM,Damian Lillard, Portland Trail Blazers,G
 2021-22,FIRST TEAM,Giannis Antetokounmpo, Milwaukee Bucks,F
 2021-22,FIRST TEAM,Jayson Tatum, Boston Celtics,F
@@ -24,6 +26,7 @@
 2021-22,SECOND TEAM,Stephen Curry, Golden State Warriors,G
 2021-22,THIRD TEAM,Pascal Siakam, Toronto Raptors,F
 2021-22,THIRD TEAM,LeBron James, Los Angeles Lakers,F
+2021-22,THIRD TEAM,Karl-Anthony Towns, Minnesota Timberwolves,C
 2021-22,THIRD TEAM,Chris Paul, Phoenix Suns,G
 2021-22,THIRD TEAM,Trae Young, Atlanta Hawks,G
 2020-21,FIRST TEAM,Giannis Antetokounmpo, Milwaukee Bucks,F
@@ -83,6 +86,7 @@
 2017-18,SECOND TEAM,Russell Westbrook, Oklahoma City Thunder,G
 2017-18,THIRD TEAM,Paul George, Oklahoma City Thunder,F
 2017-18,THIRD TEAM,Jimmy Butler, Minnesota Timberwolves,F
+2017-18,THIRD TEAM,Karl-Anthony Towns, Minnesota Timberwolves,C
 2017-18,THIRD TEAM,Stephen Curry, Golden State Warriors,G
 2017-18,THIRD TEAM,Victor Oladipo, Indiana Pacers,G
 2016-17,FIRST TEAM,LeBron James, Cleveland Cavaliers,F
@@ -100,6 +104,7 @@
 2016-17,THIRD TEAM,DeAndre Jordan, LA Clippers,C
 2016-17,THIRD TEAM,John Wall, Washington Wizards,G
 2016-17,THIRD TEAM,DeMar DeRozan, Toronto Raptors,G
+2016-17,THIRD TEAM,* (Voting Totals, PDF),
 2015-16,FIRST TEAM,LeBron James, Cleveland Cavaliers,F
 2015-16,FIRST TEAM,Kawhi Leonard, San Antonio Spurs,F
 2015-16,FIRST TEAM,DeAndre Jordan, LA Clippers,C
@@ -115,6 +120,7 @@
 2015-16,THIRD TEAM,Andre Drummond, Detroit Pistons,C
 2015-16,THIRD TEAM,Klay Thompson, Golden State Warriors,G
 2015-16,THIRD TEAM,Kyle Lowry, Toronto Raptors,G
+2015-16,THIRD TEAM,* (Voting Totals, PDF),
 2014-15,FIRST TEAM,LeBron James, Cleveland Cavaliers,F
 2014-15,FIRST TEAM,Anthony Davis, New Orleans Pelicans,F
 2014-15,FIRST TEAM,Marc Gasol, Memphis Grizzlies,C
@@ -182,6 +188,7 @@
 2010-11,FIRST TEAM,Derrick Rose, Chicago Bulls,G
 2010-11,SECOND TEAM,Pau Gasol, Los Angeles Lakers,F
 2010-11,SECOND TEAM,Dirk Nowitzki, Dallas Mavericks,F
+2010-11,SECOND TEAM,Amar’e Stoudemire, New York Knicks,C
 2010-11,SECOND TEAM,Dwyane Wade, Miami Heat,G
 2010-11,SECOND TEAM,Russell Westbrook, Oklahoma City Thunder,G
 2010-11,THIRD TEAM,LaMarcus Aldridge, Portland Trail Blazers,F
@@ -196,6 +203,7 @@
 2009-10,FIRST TEAM,Dwyane Wade, Miami Heat,G
 2009-10,SECOND TEAM,Carmelo Anthony, Denver Nuggets,F
 2009-10,SECOND TEAM,Dirk Nowitzki, Dallas Mavericks,F
+2009-10,SECOND TEAM,Amar’e Stoudemire, Phoenix Suns,C
 2009-10,SECOND TEAM,Steve Nash, Phoenix Suns,G
 2009-10,SECOND TEAM,Deron Williams, Utah Jazz,G
 2009-10,THIRD TEAM,Tim Duncan, San Antonio Spurs,F
@@ -215,6 +223,7 @@
 2008-09,SECOND TEAM,Brandon Roy, Portland Trail Blazers,G
 2008-09,THIRD TEAM,Carmelo Anthony, Denver Nuggets,F
 2008-09,THIRD TEAM,Pau Gasol, Los Angeles Lakers,F
+2008-09,THIRD TEAM,Shaquille O’Neal, Phoenix Suns,C
 2008-09,THIRD TEAM,Chauncey Billups, Detroit Pistons,G
 2008-09,THIRD TEAM,Tony Parker, San Antonio Spurs,G
 2007-08,FIRST TEAM,Kevin Garnett, Boston Celtics,F
@@ -224,6 +233,7 @@
 2007-08,FIRST TEAM,Chris Paul, New Orleans Hornets,G
 2007-08,SECOND TEAM,Tim Duncan, San Antonio Spurs,F
 2007-08,SECOND TEAM,Dirk Nowitzki, Dallas Mavericks,F
+2007-08,SECOND TEAM,Amar’e Stoudemire, Phoenix Suns,C
 2007-08,SECOND TEAM,Steve Nash, Phoenix Suns,G
 2007-08,SECOND TEAM,Deron Williams, Utah Jazz,G
 2007-08,THIRD TEAM,Carlos Boozer, Utah Jazz,F
@@ -233,6 +243,7 @@
 2007-08,THIRD TEAM,Tracy McGrady, Houston Rockets,G
 2006-07,FIRST TEAM,Tim Duncan, San Antonio Spurs,F
 2006-07,FIRST TEAM,Dirk Nowitzki, Dallas Mavericks,F
+2006-07,FIRST TEAM,Amar’e Stoudemire, Phoenix Suns,C
 2006-07,FIRST TEAM,Kobe Bryant, Los Angeles Lakers,G
 2006-07,FIRST TEAM,Steve Nash, Phoenix Suns,G
 2006-07,SECOND TEAM,Chris Bosh, Toronto Raptors,F
@@ -247,6 +258,7 @@
 2006-07,THIRD TEAM,Dwyane Wade, Miami Heat,G
 2005-06,FIRST TEAM,LeBron James, Cleveland Cavaliers,F
 2005-06,FIRST TEAM,Dirk Nowitzki, Dallas Mavericks,F
+2005-06,FIRST TEAM,Shaquille O’Neal, Miami Heat,C
 2005-06,FIRST TEAM,Kobe Bryant, Los Angeles Lakers,G
 2005-06,FIRST TEAM,Steve Nash, Phoenix Suns,G
 2005-06,SECOND TEAM,Elton Brand, LA Clippers,F
@@ -261,10 +273,12 @@
 2005-06,THIRD TEAM,Allen Iverson, Philadelphia 76ers,G
 2004-05,FIRST TEAM,Tim Duncan, San Antonio Spurs,F
 2004-05,FIRST TEAM,Dirk Nowitzki, Dallas Mavericks),F
+2004-05,FIRST TEAM,Shaquille O’Neal, Miami Heat,C
 2004-05,FIRST TEAM,Allen Iverson, Philadelphia 76ers,G
 2004-05,FIRST TEAM,Steve Nash, Phoenix Suns,G
 2004-05,SECOND TEAM,Kevin Garnett, Minnesota Timberwolves,F
 2004-05,SECOND TEAM,LeBron James, Cleveland Cavaliers,F
+2004-05,SECOND TEAM,Amar’e Stoudemire, Phoenix Suns,C
 2004-05,SECOND TEAM,Ray Allen, Seattle SuperSonics,G
 2004-05,SECOND TEAM,Dwyane Wade, Miami Heat,G
 2004-05,THIRD TEAM,Shawn Marion, Phoenix Suns,F
@@ -274,10 +288,12 @@
 2004-05,THIRD TEAM,Kobe Bryant, Los Angeles Lakers,G
 2003-04,FIRST TEAM,Tim Duncan, San Antonio Spurs,F
 2003-04,FIRST TEAM,Kevin Garnett, Minnesota Timberwolves,F
+2003-04,FIRST TEAM,Shaquille O’Neal, Los Angeles Lakers,C
 2003-04,FIRST TEAM,Kobe Bryant, Los Angeles Lakers,G
 2003-04,FIRST TEAM,Jason Kidd, New Jersey Nets,G
 2003-04,SECOND TEAM,Tracy McGrady, Orlando Magic,F
 2003-04,SECOND TEAM,Peja Stojakovic, Sacramento Kings,F
+2003-04,SECOND TEAM,Jermaine O’Neal, Indiana Pacers,F
 2003-04,SECOND TEAM,Ben Wallace, Detroit Pistons,C
 2003-04,SECOND TEAM,Sam Cassell, Minnesota Timberwolves,G
 2003-04,THIRD TEAM,Ron Artest, Indiana Pacers,F
@@ -287,6 +303,7 @@
 2003-04,THIRD TEAM,Michael Redd, Milwaukee Bucks,G
 2002-03,FIRST TEAM,Tim Duncan, San Antonio Spurs,F
 2002-03,FIRST TEAM,Kevin Garnett, Minnesota Timberwolves,F
+2002-03,FIRST TEAM,Shaquille O’Neal, Los Angeles Lakers,C
 2002-03,FIRST TEAM,Kobe Bryant, Los Angeles Lakers,G
 2002-03,FIRST TEAM,Tracy McGrady, Orlando Magic,G
 2002-03,SECOND TEAM,Dirk Nowitzki, Dallas Mavericks,F
@@ -296,10 +313,12 @@
 2002-03,SECOND TEAM,Jason Kidd, New Jersey Nets,G
 2002-03,THIRD TEAM,Jamal Mashburn, New Orleans Hornets,F
 2002-03,THIRD TEAM,Paul Pierce, Boston Celtics,F
+2002-03,THIRD TEAM,Jermaine O’Neal, Indiana Pacers,C
 2002-03,THIRD TEAM,Stephon Marbury, Phoenix Suns,G
 2002-03,THIRD TEAM,Steve Nash, Dallas Mavericks,G
 2001-02,FIRST TEAM,Tim Duncan, San Antonio Spurs,F
 2001-02,FIRST TEAM,Tracy McGrady, Orlando Magic,F
+2001-02,FIRST TEAM,Shaquille O’Neal, Los Angeles Lakers,C
 2001-02,FIRST TEAM,Kobe Bryant, Los Angeles Lakers,G
 2001-02,FIRST TEAM,Jason Kidd, New Jersey Nets,G
 2001-02,SECOND TEAM,Kevin Garnett, Minnesota Timberwolves,F
@@ -307,12 +326,14 @@
 2001-02,SECOND TEAM,Dirk Nowitzki, Dallas Mavericks,C
 2001-02,SECOND TEAM,Allen Iverson, Philadelphia 76ers,G
 2001-02,SECOND TEAM,Gary Payton, Seattle SuperSonics,G
+2001-02,THIRD TEAM,Jermaine O’Neal, Indiana Pacers,F
 2001-02,THIRD TEAM,Ben Wallace, Detroit Pistons,F
 2001-02,THIRD TEAM,Dikembe Mutombo, Philadelphia 76ers,C
 2001-02,THIRD TEAM,Steve Nash, Dallas Mavericks,G
 2001-02,THIRD TEAM,Paul Pierce, Boston Celtics,G
 2000-01,FIRST TEAM,Tim Duncan, San Antonio Spurs,F
 2000-01,FIRST TEAM,Chris Webber, Sacramento Kings,F
+2000-01,FIRST TEAM,Shaquille O’Neal, Los Angeles Lakers,C
 2000-01,FIRST TEAM,Allen Iverson, Philadelphia 76ers,G
 2000-01,FIRST TEAM,Jason Kidd, Phoenix Suns,G
 2000-01,SECOND TEAM,Kevin Garnett, Minnesota Timberwolves,F
@@ -327,6 +348,7 @@
 2000-01,THIRD TEAM,Gary Payton, Seattle SuperSonic,G
 1999-00,FIRST TEAM,Tim Duncan, San Antonio Spurs,F
 1999-00,FIRST TEAM,Kevin Garnett, Minnesota Timberwolves,F
+1999-00,FIRST TEAM,Shaquille O’Neal, Los Angeles Lakers,C
 1999-00,FIRST TEAM,Gary Payton, Seattle SuperSonics,G
 1999-00,FIRST TEAM,Jason Kidd, Phoenix Suns,G
 1999-00,SECOND TEAM,Grant Hill, Detroit Pistons,F
@@ -346,6 +368,7 @@
 1998-99,FIRST TEAM,Jason Kidd, Phoenix Suns,G
 1998-99,SECOND TEAM,Grant Hill, Detroit Pistons,F
 1998-99,SECOND TEAM,Chris Webber, Sacramento Kings,F
+1998-99,SECOND TEAM,Shaquille O’Neal, Los Angeles Lakers,C
 1998-99,SECOND TEAM,Tim Hardaway, Miami Heat,G
 1998-99,THIRD TEAM,Kevin Garnett, Minnesota Timberwolves,F
 1998-99,THIRD TEAM,Antonio McDyess, Denver Nuggets,F
@@ -354,6 +377,7 @@
 1998-99,THIRD TEAM,John Stockton, Utah Jazz,G
 1997-98,FIRST TEAM,Tim Duncan, San Antonio Spurs,F
 1997-98,FIRST TEAM,Karl Malone, Utah Jazz,F
+1997-98,FIRST TEAM,Shaquille O’Neal, Los Angeles Lakers,C
 1997-98,FIRST TEAM,Michael Jordan, Chicago Bulls,G
 1997-98,FIRST TEAM,Gary Payton, Seattle SuperSonics,G
 1997-98,SECOND TEAM,Grant Hill, Detroit Pistons,F
@@ -378,6 +402,7 @@
 1996-97,SECOND TEAM,Mitch Richmond, Sacramento Kings,G
 1996-97,THIRD TEAM,Vin Baker, Milwaukee Bucks,F
 1996-97,THIRD TEAM,Anthony Mason, Charlotte Hornets,F
+1996-97,THIRD TEAM,Shaquille O’Neal, Los Angeles Lakers,C
 1996-97,THIRD TEAM,Anfernee Hardaway, Orlando Magic,G
 1996-97,THIRD TEAM,John Stockton, Utah Jazz,G
 1995-96,FIRST TEAM,Scottie Pippen, Chicago Bulls,F
@@ -392,6 +417,7 @@
 1995-96,SECOND TEAM,John Stockton, Utah Jazz,G
 1995-96,THIRD TEAM,Charles Barkley, Phoenix Suns,F
 1995-96,THIRD TEAM,Juwan Howard, Washington Bullets),F
+1995-96,THIRD TEAM,Shaquille O’Neal, Orlando Magic,C
 1995-96,THIRD TEAM,Reggie Miller, Indiana Pacers,G
 1995-96,THIRD TEAM,Mitch Richmond, Sacramento Kings,G
 1994-95,FIRST TEAM,Scottie Pippen, Chicago Bulls,F
@@ -401,6 +427,7 @@
 1994-95,FIRST TEAM,Anfernee Hardaway, Orlando Magic,G
 1994-95,SECOND TEAM,Charles Barkley, Phoenix Suns,F
 1994-95,SECOND TEAM,Shawn Kemp, Seattle SuperSonics,F
+1994-95,SECOND TEAM,Shaquille O’Neal, Orlando Magic,C
 1994-95,SECOND TEAM,Gary Payton, Seattle SuperSonics,G
 1994-95,SECOND TEAM,Mitch Richmond, Sacramento Kings,G
 1994-95,THIRD TEAM,Dennis Rodman, San Antonio Spurs,F
@@ -420,6 +447,7 @@
 1993-94,SECOND TEAM,Mitch Richmond, Sacramento Kings,G
 1993-94,THIRD TEAM,Derrick Coleman, New Jersey Nets,F
 1993-94,THIRD TEAM,Dominique Wilkins, Atlanta Hawks/LA Clippers,F
+1993-94,THIRD TEAM,Shaquille O’Neal, Orlnado Magic,C
 1993-94,THIRD TEAM,Gary Payton, Seattle SuperSonics,G
 1993-94,THIRD TEAM,Mark Price, Cleveland Cavaliers,G
 1992-93,FIRST TEAM,Charles Barkley, Phoenix Suns,F
@@ -519,6 +547,7 @@
 1986-87,SECOND TEAM,Isiah Thomas, Detroit Pistons,G
 1985-86,FIRST TEAM,Dominique Wilkins, Atlanta Hawks,F
 1985-86,FIRST TEAM,Larry Bird, Boston Celtics,F
+1985-86,FIRST TEAM,Kareem Abdul-Jabbar, Los Angeles Lakers,C
 1985-86,FIRST TEAM,Isiah Thomas, Detroit Pistons,G
 1985-86,FIRST TEAM,Magic Johnson, Los Angeles Lakers,G
 1985-86,SECOND TEAM,Charles Barkley, Philadelphia 76ers,F
@@ -533,10 +562,12 @@
 1984-85,FIRST TEAM,Magic Johnson, Los Angeles Lakers,G
 1984-85,SECOND TEAM,Terry Cummings, Milwaukee Bucks,F
 1984-85,SECOND TEAM,Ralph Sampson, Houston Rockets,F
+1984-85,SECOND TEAM,Kareem Abdul-Jabbar, Los Angeles Lakers,C
 1984-85,SECOND TEAM,Sidney Moncrief, Milwaukee Bucks,G
 1984-85,SECOND TEAM,Michael Jordan, Chicago Bulls,G
 1983-84,FIRST TEAM,Bernard King, New YOrk Knicks,F
 1983-84,FIRST TEAM,Larry Bird, Boston Celtics,F
+1983-84,FIRST TEAM,Kareem Abdul-Jabbar, Los Angeles Lakers,C
 1983-84,FIRST TEAM,Isiah Thomas, Detroit Pistons,G
 1983-84,FIRST TEAM,Magic Johnson, Los Angles Lakers,G
 1983-84,SECOND TEAM,Adrian Dantley, Utah Jazz,F
@@ -551,6 +582,7 @@
 1982-83,FIRST TEAM,Magic Johnson, Los Angeles Lakers,G
 1982-83,SECOND TEAM,Alex English, Denver Nuggets,F
 1982-83,SECOND TEAM,Buck Williams, New Jersey Nets,F
+1982-83,SECOND TEAM,Kareem Abdul-Jabbar, Los Angeles Lakers,C
 1982-83,SECOND TEAM,George Gervin, San Antonio Spurs,G
 1982-83,SECOND TEAM,Isiah Thomas, Detroit Pistons,G
 1981-82,FIRST TEAM,Julius Erving, Philadelphia 76ers,F
@@ -565,6 +597,7 @@
 1981-82,SECOND TEAM,Magic Johnson, Los Angeles Lakers,G
 1980-81,FIRST TEAM,Julius Erving, Philadelphia 76ers,F
 1980-81,FIRST TEAM,Larry Bird, Boston Celtics,F
+1980-81,FIRST TEAM,Kareem Abdul-Jabbar, Los Angeles Lakers,C
 1980-81,FIRST TEAM,George Gervin, San Antonio Spurs,G
 1980-81,FIRST TEAM,Dennis Johnson, Phoenix Suns,G
 1980-81,SECOND TEAM,Adrian Dantley, Utah Jazz,F
@@ -574,6 +607,7 @@
 1980-81,SECOND TEAM,Otis Birdsong, Kansas City Kings,G
 1979-80,FIRST TEAM,Julius Erving, Philadelphia 76ers,F
 1979-80,FIRST TEAM,Larry Bird, Boston Celtics),F
+1979-80,FIRST TEAM,Kareem Abdul-Jabbar, Los Angeles Lakers,C
 1979-80,FIRST TEAM,George Gervin, San Antonio Spurs,G
 1979-80,FIRST TEAM,Paul Westphal, Phoenix Suns,G
 1979-80,SECOND TEAM,Dan Roundfield, Atlanta Hawks,F
@@ -588,7 +622,9 @@
 1978-79,FIRST TEAM,Paul Westphal, Phoenix Suns,G
 1978-79,SECOND TEAM,Bob Dandridge, Washington Bullets,F
 1978-79,SECOND TEAM,Walter Davis, Phoenix Suns,F
+1978-79,SECOND TEAM,Kareem Abdul-Jabbar, Los Angeles Lakers,C
 1978-79,SECOND TEAM,Phil Ford, Kansas City Kings,G
+1978-79,SECOND TEAM,World B. Free, San Diego Clippers,G
 1977-78,FIRST TEAM,Julius Erving, Philadelphia 76ers,F
 1977-78,FIRST TEAM,Truck Robinson, New Orleans Jazz,F
 1977-78,FIRST TEAM,Bill Walton, Portland Trail Blazers,C
@@ -596,10 +632,12 @@
 1977-78,FIRST TEAM,David Thompson, Denver Nuggets,G
 1977-78,SECOND TEAM,Maurice Lucas, Portland Trail Blazers,F
 1977-78,SECOND TEAM,Walter Davis, Phoenix Suns,F
+1977-78,SECOND TEAM,Kareem Abdul-Jabbar, Los Angeles Lakers,C
 1977-78,SECOND TEAM,Pete Maravich, New Orleans Jazz,G
 1977-78,SECOND TEAM,Paul Westphal, Phoenix Suns,G
 1976-77,FIRST TEAM,Elvin Hayes, Washington Bullets,F
 1976-77,FIRST TEAM,David Thompson, Denver Nuggets,F
+1976-77,FIRST TEAM,Kareem Abdul-Jabbar, Los Angeles Lakers,C
 1976-77,FIRST TEAM,Pete Maravich, New Orleans Jazz,G
 1976-77,FIRST TEAM,Paul Westphal, Phoenix Suns,G
 1976-77,SECOND TEAM,Julius Erving, Philadelphia 76ers,F
@@ -609,6 +647,7 @@
 1976-77,SECOND TEAM,Jo Jo White, Boston Celtics,G
 1975-76,FIRST TEAM,Rick Barry, Golden State Warriors,F
 1975-76,FIRST TEAM,George McGinnis, Philadelphia 76ers,F
+1975-76,FIRST TEAM,Kareem Abdul-Jabbar, Los Angeles Lakers,C
 1975-76,FIRST TEAM,Pete Maravich, New Orleans Jazz,G
 1975-76,FIRST TEAM,Tiny Archibald, Kansas City Kings,G
 1975-76,SECOND TEAM,John Havlicek, Boston Celtics,F
@@ -628,6 +667,7 @@
 1974-75,SECOND TEAM,Jo Jo White, Boston Celtics,G
 1973-74,FIRST TEAM,Rick Barry, Golden State Warriors,F
 1973-74,FIRST TEAM,John Havlicek, Boston Celtics,F
+1973-74,FIRST TEAM,Kareem Abdul-Jabbar, Milwaukee Bucks,C
 1973-74,FIRST TEAM,Gail Goodrich, Los Angeles Lakers,G
 1973-74,FIRST TEAM,Walt Frazier, New York Knicks,G
 1973-74,SECOND TEAM,Elvin Hayes, Capital Bullets,F
@@ -637,6 +677,7 @@
 1973-74,SECOND TEAM,Norm Van Lier, Chicago Bulls,G
 1972-73,FIRST TEAM,Spencer Haywood, Seattle SuperSonics,F
 1972-73,FIRST TEAM,John Havlicek, Boston Celtics,F
+1972-73,FIRST TEAM,Kareem Abdul-Jabbar, Milwaukee Bucks,C
 1972-73,FIRST TEAM,Tiny Archibald, Kansas City-Omaha Kings,G
 1972-73,FIRST TEAM,Jerry West, Los Angeles Lakers,G
 1972-73,SECOND TEAM,Elvin Hayes, Baltimore Bullets,F
@@ -646,6 +687,7 @@
 1972-73,SECOND TEAM,Pete Maravich, Atlanta Hawks,G
 1971-72,FIRST TEAM,Spencer Haywood, Seattle SuperSonics,F
 1971-72,FIRST TEAM,John Havlicek, Boston Celtics,F
+1971-72,FIRST TEAM,Kareem Abdul-Jabbar, Milwaukee Bucks,C
 1971-72,FIRST TEAM,Walt Frazier, New York Knicks,G
 1971-72,FIRST TEAM,Jerry West, Los Angeles Lakers,G
 1971-72,SECOND TEAM,Billy Cunningham, Philadelphia 76ers,F
@@ -655,6 +697,7 @@
 1971-72,SECOND TEAM,Archie Clark, Baltimore Bullets,G
 1970-71,FIRST TEAM,Billy Cunningham, Philadelphia 76ers,F
 1970-71,FIRST TEAM,John Havlicek, Boston Celtics,F
+1970-71,FIRST TEAM,Kareem Abdul-Jabbar, Milwaukee Bucks,C
 1970-71,FIRST TEAM,Dave Bing, Detroit Pistons,G
 1970-71,FIRST TEAM,Jerry West, Los Angeles Lakers,G
 1970-71,SECOND TEAM,Gus Johnson, Baltimore Bullets,F
@@ -669,6 +712,7 @@
 1969-70,FIRST TEAM,Jerry West, Los Angeles Lakers,G
 1969-70,SECOND TEAM,Gus Johnson, Baltimore Bullets,F
 1969-70,SECOND TEAM,John Havlicek, Boston Celtics,F
+1969-70,SECOND TEAM,Kareem Abdul-Jabbar, Milwaukee Bucks,C
 1969-70,SECOND TEAM,Lou Hudson, Atlanta Hawks,G
 1969-70,SECOND TEAM,Oscar Robertson, Cincinnati Royals,G
 1968-69,FIRST TEAM,Billy Cunningham, Philadelphia 76ers,F
@@ -897,3 +941,8 @@
 1946-47,FIRST TEAM,Joe Fulks, Philadelphia Warriors,
 1946-47,FIRST TEAM,Bob Feerick, Washington Capitols,
 1946-47,FIRST TEAM,Stan Miasek, Detroit Falcons,
+1946-47,SECOND TEAM,Frankie Baumholtz, Cleveland Rebels,
+1946-47,SECOND TEAM,Ernie Calverley, Providence Steamrollers,
+1946-47,SECOND TEAM,Chick Halbert, Chicago Stags,
+1946-47,SECOND TEAM,John Logan, St. Louis Bombers,
+1946-47,SECOND TEAM,Fred Scolari, Washington Capitols,
