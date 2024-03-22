@@ -1,0 +1,12 @@
+1. Fixed Effects (1 way/2 way) - Jin Lei
+- FD
+- Within/LSDV
+- GLS
+2. Random Effects (1 way/2 way) - Jin Lei
+- MLE
+3. Correlated Effects (1 way/2 way) - Cliff
+4. Tests for FE and RE effects (F-test, Hansen, Wald, Lagranian etc) - Cliff
+5. Std errors (Standard/HC Robust/Cluster robust/HC, AC robust) - Bharat
+6. Clustering on coach - Bharat
+
+Later: IV/2SLS/GMM
