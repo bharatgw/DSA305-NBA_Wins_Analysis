@@ -8,5 +8,6 @@
 4. Tests for FE and RE effects (F-test, Hansen, Wald, Lagranian etc) - Cliff
 5. Std errors (Standard/HC Robust/Cluster robust/HC, AC robust) - Bharat
 6. Clustering on coach - Bharat
+7. Pooled OLS - Bharat
 
 Later: IV/2SLS/GMM
