@@ -22,7 +22,7 @@ nba = nba.drop(columns = ['Coach'])
 Y = nba.W
 X = nba.drop(columns = ['W', 'indi'])
 pooledols_reg = plm.PooledOLS(Y, X)
-pooled_results = pooledols_reg.fit()
+pooled_results = pooledols_reg.fit(cov_type = "clustered")
 # print(pooled_results.summary)
 
 # One way fixed effect model 
@@ -31,7 +31,7 @@ onefe_reg = plm.PanelOLS.from_formula(formula = 'W ~ Perc_3PA + Perc_2PA + Perc_
                                     'L1_N_Awards_Won + L1_Coach_RS_W_Perc_Overall + L1_Coach_P_W_Perc +'
                                     'AVG_PLAYER_AGE + Coach_N_Seasons_Overall + Coach_Perc_Seasons_TEAM +'
                                     'EntityEffects', data = nba, drop_absorbed = True) 
-onefe_results = onefe_reg.fit()
+onefe_results = onefe_reg.fit(cov_type = "clustered")
 # print(onefe_results.summary)
 
 # One way fixed effect model 
@@ -40,7 +40,7 @@ onefe_reg = plm.PanelOLS.from_formula(formula = 'W ~ Perc_3PA + Perc_2PA + Perc_
                                     'L1_N_Awards_Won + L1_Coach_RS_W_Perc_Overall + L1_Coach_P_W_Perc +'
                                     'AVG_PLAYER_AGE + Coach_N_Seasons_Overall + Coach_Perc_Seasons_TEAM +'
                                     'TimeEffects', data = nba, drop_absorbed = True) 
-onefe_results = onefe_reg.fit()
+onefe_results = onefe_reg.fit(cov_type = "clustered")
 # print(onefe_results.summary)       
 
 # Two way fixed effect model
@@ -49,7 +49,7 @@ twofe_reg = plm.PanelOLS.from_formula(formula = 'W ~ Perc_3PA + Perc_2PA + Perc_
                                     'L1_N_Awards_Won + L1_Coach_RS_W_Perc_Overall + L1_Coach_P_W_Perc +'
                                     'AVG_PLAYER_AGE + Coach_N_Seasons_Overall + Coach_Perc_Seasons_TEAM +'
                                     ' EntityEffects + TimeEffects', data = nba, drop_absorbed = True) 
-twofe_results = twofe_reg.fit()
+twofe_results = twofe_reg.fit(cov_type = "clustered")
 # print(twofe_results.summary)
 
 # one way random effect model 
@@ -57,7 +57,7 @@ onere_reg = plm.RandomEffects.from_formula(formula = 'W ~ Perc_3PA + Perc_2PA + 
                                     'PFminusPFD + OPP_Perc_3PA + OPP_Perc_AST + OPP_Perc_STL +'
                                     'L1_N_Awards_Won + L1_Coach_RS_W_Perc_Overall + L1_Coach_P_W_Perc +'
                                     'AVG_PLAYER_AGE + Coach_N_Seasons_Overall + Coach_Perc_Seasons_TEAM', data = nba)
-onere_results = onere_reg.fit()
+onere_results = onere_reg.fit(cov_type = "clustered")
 print(onere_results.summary)
 
 # two way random effect model 
@@ -83,7 +83,7 @@ def feasible_gls(formula, data, max_iter=20, tol=1e-5, **kwargs):
         print("Unbalanced Panel Data !") 
         return
     ols_model = smf.ols(formula=formula, data=data) 
-    ols_res = ols_model.fit() 
+    ols_res = ols_model.fit(cov_type = "clustered") 
     resid = ols_res.resid 
     bar_J_T = 1/T * np.ones(shape=(T, T)) 
     bar_J_N = 1/N * np.ones(shape=(N, N)) 
@@ -103,7 +103,7 @@ def feasible_gls(formula, data, max_iter=20, tol=1e-5, **kwargs):
         omega = w_1 * Q_1 + w_2 * Q_2 + w_3 * Q_3 + w_4 * Q_4 
         
         gls_model = smf.gls(formula=formula, data=data, sigma=omega) 
-        gls_res = gls_model.fit() 
+        gls_res = gls_model.fit(cov_type = "clustered") 
         resid = gls_res.resid 
         with np.printoptions(formatter={'float': '{:0.4f}'.format}): 
             print(f">> Iteration {i}: beta = {gls_res.params.values}") 
