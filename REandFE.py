@@ -18,29 +18,29 @@ nba = nba.drop(columns = ["Perc_2PA", 'Coach'])
 
 
 
-#Pooled OLS model 
-Y = nba.W
-X = nba.drop(columns = ['W', 'indi'])
-pooledols_reg = plm.PooledOLS(Y, X)
-pooled_results = pooledols_reg.fit()
-print(pooled_results.summary)
 
-# One way fixed effect model 
+# One way entity fixed effect model 
 onefe_reg = plm.PanelOLS.from_formula(formula = 'W ~ Perc_3PA + Perc_AST + Perc_STL +'
                                     'PFminusPFD + OPP_Perc_3PA + OPP_Perc_AST + OPP_Perc_STL +'
                                     'L1_N_Awards_Won + L1_Coach_RS_W_Perc_Overall + L1_Coach_P_W_Perc +'
                                     'AVG_PLAYER_AGE + Coach_N_Seasons_Overall + Coach_Perc_Seasons_TEAM +'
-                                    'C(time) + EntityEffects', data = nba, drop_absorbed = True) 
+                                    'C(indi) + EntityEffects', data = nba, drop_absorbed = True) 
 onefe_results = onefe_reg.fit()
 print(onefe_results.summary)
-                                   
-
+# One way time fixed effect mode 
+onefe2_reg = plm.PanelOLS.from_formula(formula = 'W ~ Perc_3PA + Perc_AST + Perc_STL +'
+                                    'PFminusPFD + OPP_Perc_3PA + OPP_Perc_AST + OPP_Perc_STL +'
+                                    'L1_N_Awards_Won + L1_Coach_RS_W_Perc_Overall + L1_Coach_P_W_Perc +'
+                                    'AVG_PLAYER_AGE + Coach_N_Seasons_Overall + Coach_Perc_Seasons_TEAM +'
+                                    'C(time) + TimeEffects', data = nba, drop_absorbed = True) 
+onefe2_results = onefe2_reg.fit()
+print(onefe2_results.summary)
 # Two way fixed effect model
 twofe_reg = plm.PanelOLS.from_formula(formula = 'W ~ Perc_3PA + Perc_AST + Perc_STL +'
                                     'PFminusPFD + OPP_Perc_3PA + OPP_Perc_AST + OPP_Perc_STL +'
                                     'L1_N_Awards_Won + L1_Coach_RS_W_Perc_Overall + L1_Coach_P_W_Perc +'
                                     'AVG_PLAYER_AGE + Coach_N_Seasons_Overall + Coach_Perc_Seasons_TEAM +'
-                                    ' EntityEffects + TimeEffects', data = nba, drop_absorbed = True) 
+                                    'C(indi) + C(time) + EntityEffects + TimeEffects', data = nba, drop_absorbed = True) 
 twofe_results = twofe_reg.fit()
 print(twofe_results.summary)
 
@@ -53,28 +53,19 @@ onere_reg = plm.RandomEffects.from_formula(formula = 'W ~ Perc_3PA + Perc_AST + 
 onere_results = onere_reg.fit()
 print(onere_results.summary)
 
+
 # two way random effect model 
-import time
-
-start = time.time()
-
-
 def check_balanced(data, id_col, time_col):
     data = data.sort_values([id_col, time_col])
     N = data[id_col].nunique() 
     T = data[time_col].nunique() 
+    return data, N, T
     
-    obs_per_id = data.groupby(id_col).size() 
-    is_balanced = all(obs_per_id == T) 
-    if is_balanced: 
-        return data, N, T
-
 def feasible_gls(formula, data, max_iter=20, tol=1e-5, **kwargs): 
-    try: 
-        data, N, T = check_balanced(data=data, **kwargs) 
-    except TypeError:
-        print("Unbalanced Panel Data !") 
-        return
+    data, N, T = check_balanced(data=data, **kwargs) 
+    return 
+    N = data[id_col].nunique() 
+    T = data[time_col].nunique() 
     ols_model = smf.ols(formula=formula, data=data) 
     ols_res = ols_model.fit() 
     resid = ols_res.resid 
@@ -115,10 +106,11 @@ def feasible_gls(formula, data, max_iter=20, tol=1e-5, **kwargs):
         'P-value': round(gls_res.pvalues, 4) 
         }) 
     print(summ)
-feasible_gls('W ~ Perc_3PA + Perc_AST + Perc_STL +'
-             'PFminusPFD + OPP_Perc_3PA + OPP_Perc_AST + OPP_Perc_STL +'
-             'L1_N_Awards_Won + L1_Coach_RS_W_Perc_Overall + L1_Coach_P_W_Perc +'
-             'AVG_PLAYER_AGE + Coach_N_Seasons_Overall + Coach_Perc_Seasons_TEAM +'
-             'C(time) + C(indi)', nba, id_col = 'indi', time_col = 'time') 
 
-   
+
+feasible_gls(formula = 'W ~ Perc_3PA + Perc_AST + Perc_STL +'
+                                    'PFminusPFD + OPP_Perc_3PA + OPP_Perc_AST + OPP_Perc_STL +'
+                                    'L1_N_Awards_Won + L1_Coach_RS_W_Perc_Overall + L1_Coach_P_W_Perc +'
+                                    'AVG_PLAYER_AGE + Coach_N_Seasons_Overall + Coach_Perc_Seasons_TEAM',
+                                    data = nba, id_col = 'indi', time_col = 'time')
+
