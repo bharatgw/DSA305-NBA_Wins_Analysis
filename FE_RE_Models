@@ -33,10 +33,7 @@ onefe_reg = plm.PanelOLS.from_formula(formula = 'W ~ Perc_3PA + Perc_AST + Perc_
                                     'C(time) + EntityEffects', data = nba, drop_absorbed = True) 
 onefe_results = onefe_reg.fit()
 print(onefe_results.summary)
-                                    'PFminusPFD + OPP_Perc_3PA + OPP_Perc_AST +'
-                                    'OPP_Perc_STL + L1_N_Awards_Won + L1_Coach_P_W_Perc +'
-                                    'AVG_PLAYER_AGE + Coach_N_Seasons_Overall + Coach_Perc_Seasons_TEAM'
-                                    + C(time))
+                                   
 
 # Two way fixed effect model
 twofe_reg = plm.PanelOLS.from_formula(formula = 'W ~ Perc_3PA + Perc_AST + Perc_STL +'
@@ -123,3 +120,5 @@ feasible_gls('W ~ Perc_3PA + Perc_AST + Perc_STL +'
              'L1_N_Awards_Won + L1_Coach_RS_W_Perc_Overall + L1_Coach_P_W_Perc +'
              'AVG_PLAYER_AGE + Coach_N_Seasons_Overall + Coach_Perc_Seasons_TEAM +'
              'C(time) + C(indi)', nba, id_col = 'indi', time_col = 'time') 
+
+   
