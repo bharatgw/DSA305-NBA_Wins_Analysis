@@ -12,8 +12,8 @@ import linearmodels as plm
 from scipy import stats
 
 # Import Data
-nba = pd.read_csv('/Users/cliffng/Desktop/DSA305 Panal Data Analysis/Group Project/finaldf.csv')
-nba = nba.dropna().drop(columns = ["Perc_2PA", 'Coach'])
+nba = pd.read_csv('./data/finaldf.csv')
+nba = nba.dropna().drop(columns = ['Coach', 'Perc_2PA'])
 
 # Create group specific means
 groupby_team = nba.drop(columns = ['Season', 'W']).groupby('TEAM').mean().add_suffix('_mean').reset_index()
@@ -48,7 +48,7 @@ wtest = reg_cre.wald_test(formula = formula)
 print(f'wtest: \n{wtest}\n')
 
 # F-Test for CRE
-nba = pd.read_csv('/Users/cliffng/Desktop/DSA305 Panal Data Analysis/Group Project/finaldf.csv')
+nba = pd.read_csv('./data/finaldf.csv')
 nba = nba.dropna().drop(columns = ["Perc_2PA", 'Coach'])
 
 # n, N and T
@@ -67,9 +67,9 @@ print(reg_re)
 k = X.shape[1] - 1
 rrss = reg_re.resid_ss
 
-ftest1 = ((rrss-urss)/13)/(urss/603)
-pval1 = 1-stats.f.cdf(abs(ftest1), 13, 603)
+ftest1 = ((rrss-urss)/(reg_re.df_resid - reg_cre.df_resid))/(urss/reg_cre.df_resid)
+pval1 = 1-stats.f.cdf(abs(ftest1), reg_re.df_resid - reg_cre.df_resid, reg_cre.df_resid)
 print('\nCRE F-Test')
 print(f'F_Test: {round(ftest1, 4)}')
 print(f'p-value: {round(pval1, 4)}')
-print('Distribution: F(13, 603)\n')
+print(f'Distribution: F({reg_re.df_resid - reg_cre.df_resid}, {reg_cre.df_resid})\n')

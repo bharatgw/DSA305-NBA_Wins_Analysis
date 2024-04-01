@@ -1,0 +1,33 @@
+,Coefficients
+Perc_3PA,"30.73*
+(15.51)"
+Perc_2PA,"-5.49
+(13.93)"
+Perc_AST,"37.11***
+(10.56)"
+Perc_STL,"64.49***
+(13.88)"
+PFminusPFD,"0.0
+(0.00)"
+OPP_Perc_3PA,"-11.8
+(10.79)"
+OPP_Perc_AST,"-90.21***
+(14.72)"
+OPP_Perc_STL,"-72.98***
+(12.95)"
+L1_N_Awards_Won,"3.34***
+(0.62)"
+L1_Coach_RS_W_Perc_Overall,"7.91
+(5.88)"
+L1_Coach_P_W_Perc,"-5.58
+(3.81)"
+AVG_PLAYER_AGE,"2.5***
+(0.32)"
+Coach_N_Seasons_Overall,"0.21***
+(0.07)"
+Coach_Perc_Seasons_TEAM,"4.05***
+(1.30)"
+R^2 Between,0.58
+R^2 Within,0.41
+R^2 Overall,0.42
+N,628.0
