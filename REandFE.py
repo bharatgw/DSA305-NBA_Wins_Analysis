@@ -44,12 +44,12 @@ twofe_reg = plm.PanelOLS.from_formula(formula = 'W ~ Perc_3PA + Perc_AST + Perc_
 twofe_results = twofe_reg.fit()
 print(twofe_results.summary)
 
-# one way random effect model 
+# one way random effect model for entity
 onere_reg = plm.RandomEffects.from_formula(formula = 'W ~ Perc_3PA + Perc_AST + Perc_STL +'
                                     'PFminusPFD + OPP_Perc_3PA + OPP_Perc_AST + OPP_Perc_STL +'
                                     'L1_N_Awards_Won + L1_Coach_RS_W_Perc_Overall + L1_Coach_P_W_Perc +'
                                     'AVG_PLAYER_AGE + Coach_N_Seasons_Overall + Coach_Perc_Seasons_TEAM +'
-                                    'C(time)', data = nba)
+                                    , data = nba)
 onere_results = onere_reg.fit()
 print(onere_results.summary)
 
@@ -60,12 +60,9 @@ def check_balanced(data, id_col, time_col):
     N = data[id_col].nunique() 
     T = data[time_col].nunique() 
     return data, N, T
-    
+
 def feasible_gls(formula, data, max_iter=20, tol=1e-5, **kwargs): 
     data, N, T = check_balanced(data=data, **kwargs) 
-    return 
-    N = data[id_col].nunique() 
-    T = data[time_col].nunique() 
     ols_model = smf.ols(formula=formula, data=data) 
     ols_res = ols_model.fit() 
     resid = ols_res.resid 
@@ -113,4 +110,6 @@ feasible_gls(formula = 'W ~ Perc_3PA + Perc_AST + Perc_STL +'
                                     'L1_N_Awards_Won + L1_Coach_RS_W_Perc_Overall + L1_Coach_P_W_Perc +'
                                     'AVG_PLAYER_AGE + Coach_N_Seasons_Overall + Coach_Perc_Seasons_TEAM',
                                     data = nba, id_col = 'indi', time_col = 'time')
+check_balanced(nba, id_col = 'indi', time_col = 'time')
+
 
