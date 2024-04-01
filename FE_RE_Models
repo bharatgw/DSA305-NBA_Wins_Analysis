@@ -32,7 +32,7 @@ onefe_reg = plm.PanelOLS.from_formula(formula = 'W ~ Perc_3PA + Perc_2PA + Perc_
                                     'AVG_PLAYER_AGE + Coach_N_Seasons_Overall + Coach_Perc_Seasons_TEAM +'
                                     'EntityEffects', data = nba, drop_absorbed = True) 
 onefe_results = onefe_reg.fit(cov_type = "clustered")
-# print(onefe_results.summary)
+print(onefe_results.summary)
 
 # One way fixed effect model 
 onefe_reg = plm.PanelOLS.from_formula(formula = 'W ~ Perc_3PA + Perc_2PA + Perc_AST + Perc_STL +'
@@ -41,7 +41,7 @@ onefe_reg = plm.PanelOLS.from_formula(formula = 'W ~ Perc_3PA + Perc_2PA + Perc_
                                     'AVG_PLAYER_AGE + Coach_N_Seasons_Overall + Coach_Perc_Seasons_TEAM +'
                                     'TimeEffects', data = nba, drop_absorbed = True) 
 onefe_results = onefe_reg.fit(cov_type = "clustered")
-# print(onefe_results.summary)       
+print(onefe_results.summary)       
 
 # Two way fixed effect model
 twofe_reg = plm.PanelOLS.from_formula(formula = 'W ~ Perc_3PA + Perc_2PA + Perc_AST + Perc_STL +'
@@ -50,13 +50,26 @@ twofe_reg = plm.PanelOLS.from_formula(formula = 'W ~ Perc_3PA + Perc_2PA + Perc_
                                     'AVG_PLAYER_AGE + Coach_N_Seasons_Overall + Coach_Perc_Seasons_TEAM +'
                                     ' EntityEffects + TimeEffects', data = nba, drop_absorbed = True) 
 twofe_results = twofe_reg.fit(cov_type = "clustered")
-# print(twofe_results.summary)
+print(twofe_results.summary)
 
-# one way random effect model 
+# one way random effect entity model
 onere_reg = plm.RandomEffects.from_formula(formula = 'W ~ Perc_3PA + Perc_2PA + Perc_AST + Perc_STL +'
                                     'PFminusPFD + OPP_Perc_3PA + OPP_Perc_AST + OPP_Perc_STL +'
                                     'L1_N_Awards_Won + L1_Coach_RS_W_Perc_Overall + L1_Coach_P_W_Perc +'
                                     'AVG_PLAYER_AGE + Coach_N_Seasons_Overall + Coach_Perc_Seasons_TEAM', data = nba)
+onere_results = onere_reg.fit(cov_type = "clustered")
+# print(onere_results.summary)
+
+# one way random effect time model
+teams = nba.reset_index()["TEAM"].unique()
+teams = {team: team_index for team_index, team in enumerate(teams)}
+nba2 = nba.reset_index()
+nba2["TEAM"] = nba2.TEAM.apply(lambda x: teams[x])
+nba2 = nba2.set_index(["Season", "TEAM"])
+onere_reg = plm.RandomEffects.from_formula(formula = 'W ~ Perc_3PA + Perc_2PA + Perc_AST + Perc_STL +'
+                                    'PFminusPFD + OPP_Perc_3PA + OPP_Perc_AST + OPP_Perc_STL +'
+                                    'L1_N_Awards_Won + L1_Coach_RS_W_Perc_Overall + L1_Coach_P_W_Perc +'
+                                    'AVG_PLAYER_AGE + Coach_N_Seasons_Overall + Coach_Perc_Seasons_TEAM', data = nba2)
 onere_results = onere_reg.fit(cov_type = "clustered")
 print(onere_results.summary)
 
