@@ -9,12 +9,8 @@ Simultaneously, we also estimate the impact of a coach's overall experience, pas
 
 This repository includes:
 
-| data - Folder contains all data scraped or extracted from NBA and Basketball Reference websites
-
-| outputTables - Folder contains summary regression table
-
-| analysis_* - All models run to conduct the analysis included within the final report
-
-| data_* - Data extraction and processing pipeline
-
-| [report]*.pdf - Final report written for the project
+	| data - Folder contains all data scraped or extracted from NBA and Basketball Reference websites
+	| outputTables - Folder contains summary regression table
+	| analysis_* - All models run to conduct the analysis included within the final report
+	| data_* - Data extraction and processing pipeline
+	| [report]*.pdf - Final report written for the project
