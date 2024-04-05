@@ -8,8 +8,13 @@ In this report, titled "What Wins NBA Games?" we analyse the playstyles of NBA t
 Simultaneously, we also estimate the impact of a coach's overall experience, past wins, and familiarity with the team on the number of wins for a team each season. Finally, we estimate the impact individual coaches have had for their teams over their career using coach fixed effects and show that coaches account for approximately 25% of variation in a team's wins.
 
 This repository includes:
+
 | data - Folder contains all data scraped or extracted from NBA and Basketball Reference websites
+
 | outputTables - Folder contains summary regression table
+
 | analysis_* - All models run to conduct the analysis included within the final report
+
 | data_* - Data extraction and processing pipeline
+
 | [report]*.pdf - Final report written for the project
