@@ -16,25 +16,26 @@ It also examines how coaching experience, prior wins, and team familiarity relat
 
 | Path | Purpose |
 | --- | --- |
-| `data_extractNBAdata.ipynb` | Historical extraction workflow for NBA and Basketball Reference data. |
-| `data_createFinaldf.ipynb` | Builds the panel-analysis dataset from files under `data/`. |
-| `analysis_PooledOLS-CoachEffects.ipynb` | Pooled models and coach-effect analysis. |
-| `analysis_CRE_Model.py` | Correlated random-effects analysis. |
-| `analysis_FE_RE_Models_w_Tests.py` | Fixed- and random-effects models and specification tests. |
-| `outputTables/` | Saved summary and regression tables. |
-| `[report] NBA_Wins_Analysis.pdf` | Final project report. |
+| [`data_extractNBAdata.ipynb`](./data_extractNBAdata.ipynb) | Historical extraction workflow for NBA and Basketball Reference data. |
+| [`data_createFinaldf.ipynb`](./data_createFinaldf.ipynb) | Builds the panel-analysis dataset from files under `data/`. |
+| [`analysis_PooledOLS-CoachEffects.ipynb`](./analysis_PooledOLS-CoachEffects.ipynb) | Pooled models and coach-effect analysis. |
+| [`analysis_CRE_Model.py`](./analysis_CRE_Model.py) | Correlated random-effects analysis. |
+| [`analysis_FE_RE_Models_w_Tests.py`](./analysis_FE_RE_Models_w_Tests.py) | Fixed- and random-effects models and specification tests. |
+| [`outputTables/`](./outputTables) | Saved summary and regression tables. |
+| [`[report] NBA_Wins_Analysis.pdf`](./%5Breport%5D%20NBA_Wins_Analysis.pdf) | Final project report. |
+| [`DATA_SOURCES.md`](./DATA_SOURCES.md) | Source provenance, tracked-data map, and pipeline notes. |
 
 ## Historical workflow
 
-1. Review or rerun `data_extractNBAdata.ipynb` only if the source sites still permit the requests.
-2. Run `data_createFinaldf.ipynb` to construct `data/finaldf.csv`.
+1. Review or rerun [`data_extractNBAdata.ipynb`](./data_extractNBAdata.ipynb) only if the source sites still permit the requests.
+2. Run [`data_createFinaldf.ipynb`](./data_createFinaldf.ipynb) to construct `data/finaldf.csv`.
 3. Run the analysis notebooks and scripts against the prepared data.
 4. Compare the saved outputs with the final report.
 
 ## Known reproducibility constraints
 
 - Dependency versions are not pinned.
-- `analysis_FE_RE_Models_w_Tests.py` reads `finaldf.csv` from the repository root, while the tracked file is `data/finaldf.csv`.
+- [`analysis_FE_RE_Models_w_Tests.py`](./analysis_FE_RE_Models_w_Tests.py) reads `finaldf.csv` from the repository root, while the tracked file is `data/finaldf.csv`.
 - The same script imports `Panel2RE_MLE`, which is not tracked in this repository.
 - Source websites, page structures, and access terms may have changed since the extraction notebook was written.
 
