@@ -12,6 +12,12 @@ This project analyses panel data for 30 NBA teams across 26 seasons. It studies 
 
 It also examines how coaching experience, prior wins, and team familiarity relate to season wins, and estimates coach fixed effects. The original report attributes approximately 25% of variation in team wins to coach effects within its model and sample.
 
+## Selected result
+
+![Estimated distribution of statistically significant coach effects](./assets/project-preview.png)
+
+The submitted report's distribution of statistically significant coach-effect estimates.
+
 ## Repository map
 
 | Path | Purpose |
